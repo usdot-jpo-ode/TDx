@@ -28,6 +28,7 @@ WZDx defines the structure and content of multiple distinct data feeds. Each fee
 ### List of Data Feeds
 Feed Name | Description | Producer | Consumer | Uses | Content
 --- | --- | --- | --- | --- | ---
+`RoadIncidentFeed` | Provides information about incidents or events that close or restrict the use of a road segment. | Transportation Authorities like Tribal, Local, State, or Federal Agencies. | Traveling public via third parties such as mapping companies and CAVs. | Increased awareness; Route planning; Driver, Passenger, and Road-User Safety. | Incident and detour road events (see [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md) and [DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md)).
 `RoadRestrictionFeed` | Provides information about sections of roadways that have restrictions. Restriction types described by this specification are listed in the [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) enumerated type. | Transportation Authorities like Tribal, Local, State, or Federal Agencies. | Traveling public via third parties such as mapping companies and CAVs. | Increased awareness; Route planning; Driver, Passenger, and Road-User Safety; Increased Efficiency; Reduced Damage to Infrastructure. | Restriction road events (see [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)).
 
 

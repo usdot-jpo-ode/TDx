@@ -29,6 +29,7 @@ Object | Description
 --- | ---
 [FeedDataSource](/spec-content/objects/FeedDataSource.md) | Information about a specific data source used to build a work zone data feed.
 [FeedInfo](/spec-content/objects/FeedInfo.md) | Information about a WZDx feed such as metadata, contact information, and data sources.
+[RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md) | The root (highest-level) object of a **Road Incident Feed** GeoJSON document.
 [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) | The root (highest-level) object of a **Road Restriction Feed** GeoJSON document.
 
 #### Road Events
@@ -37,11 +38,13 @@ The following objects are used to describe events ocurring on roadways (road eve
 Object | Description
 --- | ---
 [Lane](/spec-content/objects/Lane.md) | An individual lane within a road event.
+[IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md) | Describes incidents or events that close or restrict the use of a road segment.
 [Relationship](/spec-content/objects/Relationship.md) | Identification of both sequential and hierarchical relationships between road events and other entities.
 [Restriction](/spec-content/objects/Restriction.md) | A restriction on a road event or lane, including type and value.
 [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) | Describes a section of roadway and the limitations of how that section can be used.
 [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md) | The core details of an event occurring on a roadway (i.e. a road event) that is shared by all types of road events. 
 [RoadEventFeature](/spec-content/objects/RoadEventFeature.md) | The GeoJSON `Feature` container object for a WZDx road event.
+[TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causees disruptions to expected operations.
 
 ### Object Diagrams
 The object diagrams below depict the relationship between the data objects for each WZDx feed.
@@ -64,6 +67,8 @@ Enumerated Type | Description
 --- | ---
 [Direction](/spec-content/enumerated-types/Direction.md) | The direction for a road event based on standard naming for US roads.
 [EventType](/spec-content/enumerated-types/EventType.md) | The type of a WZDx road event.
+[IncidentCategory](/spec-content/enumerated-types/IncidentCategory.md) | Categories of incidents causing disruptions to expected operations.
+[IncidentType](/spec-content/enumerated-types/IncidentType.md) | Descriptions of the incidents causing disruptions to expected operations.
 [LaneStatus](/spec-content/enumerated-types/LaneStatus.md) | The status of a lane for the traveling public.
 [LaneType](/spec-content/enumerated-types/LaneType.md) | An indication of the type of lane or shoulder.
 [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) | The type of vehicle restriction on a roadway or lane.
