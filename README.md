@@ -15,7 +15,6 @@ Specifically, WZDx defines the structure and content of several [GeoJSON](https:
 - [Project Description](#project-description)
 - [Contact Information](#contact-information)
 - [Release Notes](#release-notes)
-    - [Release v4.0 (Dec 2021)](#wzdx-v40-december-2021)
 - [Getting Started](#getting-started)
 - [JSON Schemas](#json-schemas)
 - [Contributions](#contributions)
@@ -82,25 +81,21 @@ Contact Name: ITS JPO
 
 Contact Information: [avdx@dot.gov](mailto:avdx@dot.gov?subject=Submission%20of%20WZDx%20Specification%20Issue&Body=Issue%20name:%20“[Clarification%20/%20New%20feature%20/%20Question%5d%20—%20Summarize%20topic”%20%0d%23%23%20Summary%0dA%20concise%20description%20of%20the%20problem,%20feature%20request%20(proposed%20change),%20or%20question.%20%0d%23%23%20Motivation%0dFor%20a%20clarification…%20Describe%20the%20ambiguity%20or%20edge%20case(s)%20in%20further%20detail,%20and%20the%20issues%20and%20problems%20this%20poses.%20%0dFor%20a%20new%20feature…%20Describe%20the%20use%20case%20that%20requires%20this%20data%20spec%20feature.%20%0dFor%20a%20question…%20Describe%20the%20deliberation%20that%20led%20to%20the%20question%20within%20your%20project%20or%20organization.%20%0d%23%23%20Proposed%20changes%0d%20In%20the%20case%20of%20a%20proposed%20change,%20provide%20one%20or%20a%20few%20options%20for%20moving%20forward.)
 
-## Release Notes
-
-*For detailed release information, see [RELEASES.md](/RELEASES.md)*
 
 ## Getting Started
 
-The WZDWG welcomes feedback and comments on the WZDx v4.0 Specification. Comments can be made by posting a GitHub [Issue](https://github.com/usdot-jpo-ode/wzdx/issues) or [Discussion](https://github.com/usdot-jpo-ode/wzdx/discussions), while suggested changes can be made using a [Pull Request](https://github.com/usdot-jpo-ode/wzdx/pulls).
+Feedback and comments on the TDx v1.0 Specification are welcome. Comments can be made by posting a GitHub [Issue](https://github.com/usdot-jpo-ode/TDx/issues) or [Discussion](https://github.com/usdot-jpo-ode/TDx/discussions), while suggested changes can be made using a [Pull Request](https://github.com/usdot-jpo-ode/TDx/pulls).
 
-1. Read about WZDWG activities [Wiki](https://github.com/usdot-jpo-ode/wzdx/wiki) and the [WZDx Early Adopter's Guide](/documents/WZDx_Early_Adopters_Guide.pdf).
-2. Learn about using GitHub as a [tool for collaboration and support](/create-feed/README.md#collaborate-via-github).
-3. Use the [Specification Content](/spec-content) page to understand the data components of the specification.
-4. Validate your feed output using the respective [JSON Schema](#json-schemas).
-5. Publish your feed and tell us about it via avdx@dot.gov.
+1. Learn about using GitHub as a [tool for collaboration and support](/create-feed/README.md#collaborate-via-github).
+1. Use the [Specification Content](/spec-content) page to understand the data components of the specification.
+1. Validate your feed output using the respective [JSON Schema](#json-schemas).
+1. Publish your feed and tell us about it via avdx@dot.gov.
 
 ## JSON Schemas
 The WZDx Specification defines a JSON schema for each feed within the [schemas](/schemas) directory. Schemas can be used to validate a WZDx feed document for compliance to the specification. The repository contains schemas for the following feeds:
 
-### Current Version (4.0)
-- [WZDx v4.0 RoadRestrictionFeed](/schemas/4.0/RoadRestrictionFeed.json)
+### Current Version (TDx 1.0)
+- [TDx v1.0 RoadRestrictionFeed](/schemas/1.0/RoadRestrictionFeed.json)
 
 
 ## Contributions
