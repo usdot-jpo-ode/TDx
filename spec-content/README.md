@@ -29,7 +29,6 @@ Object | Description
 --- | ---
 [FeedDataSource](/spec-content/objects/FeedDataSource.md) | Information about a specific data source used to build a work zone data feed.
 [FeedInfo](/spec-content/objects/FeedInfo.md) | Information about a WZDx feed such as metadata, contact information, and data sources.
-[RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md) | The root (highest-level) object of a **Road Incident Feed** GeoJSON document.
 [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) | The root (highest-level) object of a **Road Restriction Feed** GeoJSON document.
 
 #### Road Events
