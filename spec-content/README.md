@@ -48,10 +48,12 @@ Object | Description
 ### Object Diagrams
 The object diagrams below depict the relationship between the data objects for each TDx feed.
 
-[TBD]
+The object diagram below indicates the relationship between the data objects used in the **RoadRestrictionFeed**:
+
+![TDx RoadRestrictionFeed object diagram](/images/TDx_RoadRestrictionFeed_object_diagram.png)
 
 #### Updating the object diagram
-When making changes to the specification, the object diagram needs to be updated as well. To modify the object diagram, open `/images/wzdx_object_diagram.drawio` at https://app.diagrams.net (or any drawio editor). Make necessary changes to the diagram using the web editor, then download the `drawio` file and replace `/images/wzdx_object_diagram.drawio` with the new file. Additionally **export** the diagram as a JPEG, using the diagram name as the file name, and replace `/images/wzdx_object_diagram.jpg` with the new image file.
+When making changes to the specification, the object diagram needs to be updated as well. To modify the object diagram, open `/images/TDx_RoadRestrictionFeed_object_diagram.drawio` at https://app.diagrams.net (or any drawio editor). Make necessary changes to the diagram using the web editor, then download the `drawio` file and replace the appropriate file in the `/images` directory with the new file. Additionally **export** the diagram as a PNG, using the diagram name as the file name, and replace `/images/TDx_RoadRestrictionFeed_object_diagram.png` with the new image file.
 
 ## Enumerated Types
 Many object properties are restricted to a finite set of values defined by an enumerated type. The enumerations for each enumerated type as well as what object properties it is used by is described in its own file in the [enumerated-types](/spec-content/enumerated-types) directory.
