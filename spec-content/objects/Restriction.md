@@ -11,6 +11,5 @@ Name | Type | Description | Conformance | Notes
 ## Used By
 Property | Object
 --- | ---
-`restrictions` | [WorkZoneRoadEvent](/spec-content/objects/WorkZoneRoadEvent.md)
 `restrictions` | [Lane](/spec-content/objects/Lane.md)
 `restrictions` | [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)
