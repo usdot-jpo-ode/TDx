@@ -57,15 +57,15 @@
   "definitions": {
     "FeedDataSource": {
       "title": "TDx Feed Data Source",
-      "description": "Describes information about a specific data source used to build the work zone data feed",
+      "description": "Describes information about a specific data source used to build the data feed",
       "type": "object",
       "properties": {
         "data_source_id": {
-          "description": "Unique identifier for the organization providing work zone data",
+          "description": "Unique identifier for the organization providing data",
           "type": "string"
         },
         "organization_name": {
-          "description": "The name of the organization for the authoritative source of the work zone data",
+          "description": "The name of the organization for the authoritative source of the data",
           "type": "string"
         },
         "contact_name": {
