@@ -13,4 +13,5 @@ Name | Type | Description | Conformance | Notes
 ## Used By
 Property | Object
 --- | ---
+`lanes` | [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md)
 `lanes` | [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)

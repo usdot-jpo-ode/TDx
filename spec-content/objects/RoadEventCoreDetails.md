@@ -1,5 +1,5 @@
 # RoadEventCoreDetails Object
-The `RoadEventCoreDetails` object represents the core details of an event occurring on a roadway (i.e. a "road event") that is shared by all types of road events, such as road restrictions (see [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)). The `RoadEventCoreDetails` cannot exist directly in a data feed and on its own does not represent a road event. It is used as the value of `core_details` property on every specific type of road event, each of which is represented by its own object.
+The `RoadEventCoreDetails` object represents the core details of an event occurring on a roadway (i.e. a "road event") that is shared by all types of road events, such as incidents (see [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md)), detours (see [DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md)) and road restrictions (see [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)). The `RoadEventCoreDetails` cannot exist directly in a data feed and on its own does not represent a road event. It is used as the value of `core_details` property on every specific type of road event, each of which is represented by its own object.
 
 This object was initially developed for the [WZDx Specification](https://github.com/usdot-jpo-ode/wzdx).
 
@@ -18,6 +18,8 @@ Name | Type | Description | Conformance | Notes
 ## Used By
 Property | Object
 --- | ---
+`core_details` | [DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md)
+`core_details` | [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md)
 `core_details` | [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)
 
 ## Important Notes
