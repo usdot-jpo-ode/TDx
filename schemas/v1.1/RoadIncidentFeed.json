@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/usdot-jpo-ode/TDx/main/schemas/1.1/RoadRestrictionFeed.json",
+  "$id": "https://raw.githubusercontent.com/usdot-jpo-ode/TDx/main/schemas/1.1/RoadInicdnetFeed.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "TDx v1.1 Road Incident Feed",
-  "description": "The GeoJSON output of a TDx road restriction data feed (TDx v1.1)",
+  "description": "The GeoJSON output of a TDx road incident data feed (TDx v1.1)",
   "type": "object",
   "properties": {
     "feed_info": {
@@ -15,7 +15,7 @@
       ]
     },
     "features": {
-      "description": "An array of GeoJSON Feature objects which represent TDx restriction road events",
+      "description": "An array of GeoJSON Feature objects which represent TDx incident road events",
       "type": "array",
       "items": {
         "allOf": [
