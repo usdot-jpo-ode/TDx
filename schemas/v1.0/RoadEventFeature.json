@@ -1,13 +1,13 @@
 
 {
-  "$id": "https://raw.githubusercontent.com/usdot-jpo-ode/wzdx/main/schemas/4.0/RoadEventFeature.json",
+  "$id": "https://raw.githubusercontent.com/usdot-jpo-ode/TDx/main/schemas/1.0/RoadEventFeature.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Road Event Feature (GeoJSON Feature)",
-  "description": "The container object for a specific WZDx road event; an instance of a GeoJSON Feature",
+  "description": "The container object for a specific TDx road event; an instance of a GeoJSON Feature (originally developed for the WZDx Specification)",
   "type": "object",
   "properties": {
     "id": {
-      "description": "A unique identifier issued by the data feed provider to identify the WZDx road event",
+      "description": "A unique identifier issued by the data feed provider to identify the TDx road event",
       "type": "string"
     },
     "type": {
@@ -45,7 +45,7 @@
       ]
     },
     "bbox": {
-      "$ref": "https://raw.githubusercontent.com/usdot-jpo-ode/wzdx/main/schemas/4.0/BoundingBox.json"
+      "$ref": "https://raw.githubusercontent.com/usdot-jpo-ode/TDx/main/schemas/1.0/BoundingBox.json"
     }
   },
   "required": ["id","type","properties","geometry"],
@@ -373,7 +373,7 @@
           }
         },
         "parents": {
-          "description": "Indicates entities that the road event with this relationship is a part of, such as a work zone project or phase. Values can but do not have to correspond to a WZDx entity",
+          "description": "Indicates entities that the road event with this relationship is a part of, such as a work zone project or phase. Values can but do not have to correspond to a TDx entity",
           "type": "array",
           "minItems": 1,
           "items": {
@@ -381,7 +381,7 @@
           }
         },
         "children": {
-          "description": "Indicates entities that are part of the road event with this relationship, such as a detour or piece of equipment. Values can but do not have to correspond to a WZDx entity",
+          "description": "Indicates entities that are part of the road event with this relationship, such as a detour or piece of equipment. Values can but do not have to correspond to a TDx entity",
           "type": "array",
           "minItems": 1,
           "items": {
@@ -489,7 +489,7 @@
     },
     "EventType": {
       "title": "Road Event Type Enumerated Type",
-      "description": "The type of WZDx road event",
+      "description": "The type of TDx road event",
       "enum": ["work-zone", "detour", "restriction"]
     },
     "Direction": {

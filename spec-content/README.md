@@ -3,27 +3,29 @@ The TDx specification defines the content and structure of GeoJSON documents int
 
 - [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md): describes the location and details of restrictions on roadways.
 
-Each feed object contains many layers of child objects. Together all the objects define the WZDx feed. All WZDx objects are located in the [objects](/spec-content/objects) subdirectory and listed in the [Objects](#objects) section of this document.
+Each feed object contains many layers of child objects. Together all the objects define the TDx feed. All TDx objects are located in the [objects](/spec-content/objects) subdirectory and listed in the [Objects](#objects) section of this document.
 
 The value of certain object properties is restricted to a defined set of values called an **enumerated type**. Enumerated types are located in the [enumerated-types](/spec-content/enumerated-types) subdirectory and listed in the [Enumerated Types](#enumerated-types) section of this document.
 
+Many of the objects and enumerated types used in the TDx Specification were initially developed for the [WZDx Specification](https://github.com/usdot-jpo-ode/wzdx).
+
 ## Objects
-Each WZDx object is described by a table of properties with following columns:
+Each TDx object is described by a table of properties with following columns:
 
 - **Name** - The property name.
-- **Type** - The type of data being stored. This can be one of the JSON primative types (only `String`, `Number`, `Array` are used), `Integer`, as defined in the [JSON schema validation specification section 6.1 (Draft 07)](https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-6.1), a formatted string as defined in [JSON schema validation specification section 7 (Draft 07)](https://datatracker.ietf.org/doc/html/draft-handrews-json-schema-validation-01#section-7.3), a [WZDx Enumerated Type](#enumerated-types), a WZDx Object, or a [GeoJSON Object](https://tools.ietf.org/html/rfc7946#section-3).
+- **Type** - The type of data being stored. This can be one of the JSON primative types (only `String`, `Number`, `Array` are used), `Integer`, as defined in the [JSON schema validation specification section 6.1 (Draft 07)](https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-6.1), a formatted string as defined in [JSON schema validation specification section 7 (Draft 07)](https://datatracker.ietf.org/doc/html/draft-handrews-json-schema-validation-01#section-7.3), a [TDx Enumerated Type](#enumerated-types), a TDx Object, or a [GeoJSON Object](https://tools.ietf.org/html/rfc7946#section-3).
 - **Description** - A description of the value of the property.
-- **Conformance** - An indication of the requirement for including the property in a WZDx GeoJSON document. There are three categories of conformance:
+- **Conformance** - An indication of the requirement for including the property in a TDx GeoJSON document. There are three categories of conformance:
     - *Required* - The property must be included
     - *Optional* - The property may be ommitted
     - *Conditional* - The property's inclusion depends on the inclusion or value of a separate property
 - **Notes** - Additional comments, guidance, notes for future consideration, or examples.
 
 ### List of Objects
-This section provides a tabular list of all objects used in the WZDx specification.
+This section provides a tabular list of all objects used in the TDx specification.
 
 #### Feed-Level
-The following objects are high-level and describe either a WZDx feed or information about a WZDx feed:
+The following objects are high-level and describe either a TDx feed or information about a TDx feed:
 
 Object | Description
 --- | ---
@@ -47,18 +49,20 @@ Object | Description
 [TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causees disruptions to expected operations.
 
 ### Object Diagrams
-The object diagrams below depict the relationship between the data objects for each WZDx feed.
+The object diagrams below depict the relationship between the data objects for each TDx feed.
 
-[TBD]
+The object diagram below indicates the relationship between the data objects used in the **RoadRestrictionFeed**:
+
+![TDx RoadRestrictionFeed object diagram](/images/TDx_RoadRestrictionFeed_object_diagram.png)
 
 #### Updating the object diagram
-When making changes to the specification, the object diagram needs to be updated as well. To modify the object diagram, open `/images/wzdx_object_diagram.drawio` at https://app.diagrams.net (or any drawio editor). Make necessary changes to the diagram using the web editor, then download the `drawio` file and replace `/images/wzdx_object_diagram.drawio` with the new file. Additionally **export** the diagram as a JPEG, using the diagram name as the file name, and replace `/images/wzdx_object_diagram.jpg` with the new image file.
+When making changes to the specification, the object diagram needs to be updated as well. To modify the object diagram, open `/images/TDx_RoadRestrictionFeed_object_diagram.drawio` at https://app.diagrams.net (or any drawio editor). Make necessary changes to the diagram using the web editor, then download the `drawio` file and replace the appropriate file in the `/images` directory with the new file. Additionally **export** the diagram as a PNG, using the diagram name as the file name, and replace `/images/TDx_RoadRestrictionFeed_object_diagram.png` with the new image file.
 
 ## Enumerated Types
 Many object properties are restricted to a finite set of values defined by an enumerated type. The enumerations for each enumerated type as well as what object properties it is used by is described in its own file in the [enumerated-types](/spec-content/enumerated-types) directory.
 
 ### List of Enumerated Types
-This section provides a tabular list of all enumerated types used in the WZDx specification.
+This section provides a tabular list of all enumerated types used in the TDx specification.
 
 #### Road Events
 The following enumerated types are used by objects that describe road events:
