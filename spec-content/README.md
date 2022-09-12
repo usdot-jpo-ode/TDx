@@ -2,6 +2,7 @@
 The TDx specification defines the content and structure of GeoJSON documents intended to be distributed as a data feed. Each GeoJSON document (colloquially "feed") contains a single feed root object. The specification defines the following feed objects:
 
 - [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md): describes the location and details of restrictions on roadways.
+- [RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md): describes the location and details of incidents and events impacting roadways.
 
 Each feed object contains many layers of child objects. Together all the objects define the TDx feed. All TDx objects are located in the [objects](/spec-content/objects) subdirectory and listed in the [Objects](#objects) section of this document.
 
@@ -39,8 +40,9 @@ The following objects are used to describe events ocurring on roadways (road eve
 
 Object | Description
 --- | ---
-[Lane](/spec-content/objects/Lane.md) | An individual lane within a road event.
+[DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md) | A detour on a roadway.
 [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md) | Describes incidents or events that close or restrict the use of a road segment.
+[Lane](/spec-content/objects/Lane.md) | An individual lane within a road event.
 [Relationship](/spec-content/objects/Relationship.md) | Identification of both sequential and hierarchical relationships between road events and other entities.
 [Restriction](/spec-content/objects/Restriction.md) | A restriction on a road event or lane, including type and value.
 [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) | Describes a section of roadway and the limitations of how that section can be used.
