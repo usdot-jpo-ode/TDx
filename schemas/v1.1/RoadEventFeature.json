@@ -265,7 +265,8 @@
         "gross-weight-limit",
         "towing-prohibited",
         "permitted-oversize-loads-prohibited",
-        "local-access-only"
+        "local-access-only",
+        "no-passing"
       ]
     },
     "LaneStatus": {
