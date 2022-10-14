@@ -72,4 +72,3 @@ Enumerated Type | Description
 [LaneType](/spec-content/enumerated-types/LaneType.md) | An indication of the type of lane or shoulder.
 [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) | The type of vehicle restriction on a roadway or lane.
 [UnitOfMeasurement](/spec-content/enumerated-types/UnitOfMeasurement.md) | Unit of measurement (e.g. "pounds", "centimeters").
-[VehicleImpact](/spec-content/enumerated-types/VehicleImpact.md) | The impact to vehicular lanes along a single road in a single direction.
