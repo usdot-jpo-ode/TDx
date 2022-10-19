@@ -56,6 +56,12 @@ Contact Name: ITS JPO
 
 Contact Information: [avdx@dot.gov](mailto:avdx@dot.gov)
 
+## Release Notes
+
+### TDx v1.0 (December 2021 as WZDx v4.0)
+
+#### New Functionality
+- Define the [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) and [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) to enable providing a feed of restrictions on roadways, such as bridge clearances.
 
 ## Getting Started
 
