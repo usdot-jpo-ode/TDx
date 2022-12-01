@@ -15,7 +15,7 @@ This repository contains data specifications intented to harmonize sharing of in
 - [License](#license)
 
 ## Data Feeds
-TDx defines the structure and content of multiple distinct data feeds. Each feed is distributed as a single GeoJSON file and is represented by both human-friendly documentation in the [spec-content](/spec-content/) directory and a JSON Schema in [/schemas](/schemas/). Each feed is designed for a specific use case is are flexible and its use in practice can vary by application.
+TDx defines the structure and content of multiple distinct data feeds. Each feed is distributed as a single GeoJSON file and is represented by both human-friendly documentation in the [spec-content](/spec-content/) directory and a JSON Schema in [/schemas](/schemas/). Each feed is designed for a specific use case.
 
 ### List of Data Feeds
 Feed Name | Description | Producer | Consumer | Uses | Content
@@ -33,9 +33,10 @@ The TDx Specification repository contains several files and subdirectories.
 1. [spec-content](/spec-content): details the data content of the TDx specification, including objects, property names and types, and enumerated types. [spec-content/README.md](/spec-content/README.md) describes the content of this directory in detail.
 
 ### Files
+1. [Creating_a_TDx_Feed.md](/Creating_a_TDx_Feed.md): information to assist in creating a TDx data feed, such as the feed format, business rules, and validation tools.
 1. [LICENSE](/LICENSE): the Creative Commons Zero v1.0 Universal license that the repository is licensed under.
-2. [README.md](/README.md) (this document): information about the TDx effort and navigating the repository.
-3. [RELEASES.md](/RELEASES.md): detailed information about every release of the TDx specification.
+1. [README.md](/README.md) (this document): information about the TDx effort and navigating the repository.
+1. [RELEASES.md](/RELEASES.md): detailed information about every release of the TDx specification.
 
 ## Project Description
 
@@ -67,7 +68,7 @@ Contact Information: [avdx@dot.gov](mailto:avdx@dot.gov)
 
 Feedback and comments on the TDx v1.0 Specification are welcome. Comments can be made by posting a GitHub [Issue](https://github.com/usdot-jpo-ode/TDx/issues) or [Discussion](https://github.com/usdot-jpo-ode/TDx/discussions), while suggested changes can be made using a [Pull Request](https://github.com/usdot-jpo-ode/TDx/pulls).
 
-1. Learn about using GitHub as a [tool for collaboration and support](/create-feed/README.md#collaborate-via-github).
+1. Learn about using GitHub as a [tool for collaboration and support](#contributions).
 1. Use the [Specification Content](/spec-content) page to understand the data components of the specification.
 1. Validate your feed output using the respective [JSON Schema](#json-schemas).
 1. Publish your feed and tell us about it via avdx@dot.gov.
@@ -87,7 +88,7 @@ The TDx Specification defines a JSON schema for each feed within the [schemas](/
 - Ask the TDx community for input on a question or propose an idea you have via [GithHub Discussions](https://github.com/usdot-jpo-ode/tdx/discussions).
 - Create a [GitHub Pull Request](https://help.github.com/articles/creating-a-pull-request/) that implements new functionality or fixes a bug.
 - Review and provide feedback on update issues/discussions/pull requests created by other users.
-- Alternatively, [email us](mailto://avdx@dot.gov.) with any questions.
+- Alternatively, [email us](mailto:avdx@dot.gov.) with any questions.
 - Help us improve our best practices and formatting on GitHub.
 
 ## Versioning
