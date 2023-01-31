@@ -2,7 +2,7 @@
 Descriptions of the incidents causing disruptions to expected operations.
 
 ## Values
-Category | Value  | Description
+[IncidentCategory](/spec-content/enumerated-types/IncidentCategory.md) | Value  | Description
 --- | --- | -- 
 Crash | `crash` |  A crash interrupts normal operations.
 Crash | `injury` | A crash involving and injury interrupts normal operations. 
