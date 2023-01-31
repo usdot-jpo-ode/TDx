@@ -369,7 +369,7 @@
     },
     "TypeOfIncident": {
       "title": "Type of Incident",
-      "description": "The TypeOfIncident object describes an event that causees disruptions to expected operations",
+      "description": "The TypeOfIncident object describes an event that causes disruptions to expected operations",
       "type": "object",
       "properties": {
         "incident_category": {
