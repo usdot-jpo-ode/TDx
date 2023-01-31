@@ -116,7 +116,7 @@
     },
     "IncidentRoadEvent": {
       "title": "Incident Road Event",
-      "description": "Describes incidents or events that close or restrict the use of a road segment.",
+      "description": "Describes incidents or events that close or restrict the use of a road segment",
       "type": "object",
       "allOf": [
         {
@@ -163,11 +163,11 @@
               "minimum": 0
             },
             "is_start_position_verified": {
-              "description": "Indicates if the start position (first geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the start of the work zone.",
+              "description": "Indicates if the start position (first geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the start of the work zone",
               "type": "boolean"
             },
             "is_end_position_verified": {
-              "description": "Indicates if the end position (last geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the end of the work zone.",
+              "description": "Indicates if the end position (last geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the end of the work zone",
               "type": "boolean"
             },
             "start_date": {
@@ -369,7 +369,7 @@
     },
     "TypeOfIncident": {
       "title": "Type of Incident",
-      "description": "The TypeOfIncident object describes an event that causees disruptions to expected operations.",
+      "description": "The TypeOfIncident object describes an event that causees disruptions to expected operations",
       "type": "object",
       "properties": {
         "incident_category": {
@@ -379,7 +379,7 @@
           "$ref": "#/definitions/IncidentType"
         },
         "description": {
-          "description": "A flag indicating whether the type of work will result in an architectural change to the roadway",
+          "description": "Short free text desciption of the type of incident",
           "type": "string"
         }
       },
