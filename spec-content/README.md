@@ -48,7 +48,7 @@ Object | Description
 [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) | Describes a section of roadway and the limitations of how that section can be used.
 [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md) | The core details of an event occurring on a roadway (i.e. a road event) that is shared by all types of road events. 
 [RoadEventFeature](/spec-content/objects/RoadEventFeature.md) | The GeoJSON `Feature` container object for a WZDx road event.
-[TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causees disruptions to expected operations.
+[TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causes disruptions to expected operations.
 
 ### Object Diagrams
 The object diagrams below depict the relationship between the data objects for each TDx feed.
