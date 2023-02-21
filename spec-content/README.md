@@ -43,12 +43,13 @@ Object | Description
 [DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md) | A detour on a roadway.
 [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md) | Describes incidents or events that close or restrict the use of a road segment.
 [Lane](/spec-content/objects/Lane.md) | An individual lane within a road event.
-[Relationship](/spec-content/objects/Relationship.md) | Identification of both sequential and hierarchical relationships between road events and other entities.
+[RelatedRoadEvent](/spec-content/objects/RelatedRoadEvent.md) | Identification a road event that is related to the road event that the RelatedRoadEvent object occurs on.
 [Restriction](/spec-content/objects/Restriction.md) | A restriction on a road event or lane, including type and value.
 [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) | Describes a section of roadway and the limitations of how that section can be used.
 [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md) | The core details of an event occurring on a roadway (i.e. a road event) that is shared by all types of road events. 
 [RoadEventFeature](/spec-content/objects/RoadEventFeature.md) | The GeoJSON `Feature` container object for a TDx road event.
 [TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causes disruptions to expected operations.
+[Relationship](/spec-content/objects/Relationship.md) (DEPRECATED)| *All properties that use this object are deprecated so this object will be removed in a future release, use [RelatedRoadEvent](/spec-content/objects/RelatedRoadEvent.md) instead.* Identification of both sequential and hierarchical relationships between road events and other entities.
 
 ### Object Diagrams
 The object diagrams below depict the relationship between the data objects for each TDx feed.
@@ -77,6 +78,7 @@ Enumerated Type | Description
 [IncidentType](/spec-content/enumerated-types/IncidentType.md) | Descriptions of the incidents causing disruptions to expected operations.
 [LaneStatus](/spec-content/enumerated-types/LaneStatus.md) | The status of a lane for the traveling public.
 [LaneType](/spec-content/enumerated-types/LaneType.md) | An indication of the type of lane or shoulder.
+[RelatedRoadEventType](/spec-content/enumerated-types/RelatedRoadEventType.md) | The type of relationship with a road event that is being identified.
 [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) | The type of vehicle restriction on a roadway or lane.
 [UnitOfMeasurement](/spec-content/enumerated-types/UnitOfMeasurement.md) | Unit of measurement (e.g. "pounds", "centimeters").
 [VehicleImpact](/spec-content/enumerated-types/VehicleImpact.md) | The impact to vehicular lanes along a single road in a single direction.
