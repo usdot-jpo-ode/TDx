@@ -49,7 +49,7 @@ Special Event | `show` | A show interrupts normal operations.
 Special Event | `festival` | A festival interrupts normal operations.
 Special Event | `exhibition` | A exhibition interrupts normal operations.
 Special Event | `performing-arts` | A performing arts event interrupts normal operations.
-Special Event | `outdoor-market` | An outdoor market is interrupting normal operations.
+Special Event | `outdoor-market` | An outdoor market interrupts normal operations.
 Special Event | `fair` | A fair interrupts normal operations.
 Special Event | `carnival` | A carnival interrupts normal operations.
 Special Event | `fireworks-display` | A fireworks display interrupts normal operations.
