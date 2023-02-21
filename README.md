@@ -1,10 +1,10 @@
 # Transportation Data Exchange (TDx)
 
-This repository contains data specifications intented to harmonize sharing of information about transportation events and infrastructure between infrastructure owner operators and the public. The specifications here were initially created under the [Work Zone Data Exchange](https://github.com/usdot-jpo-ode/wzdx) project. 
+This repository contains data specifications intended to harmonize sharing of information about transportation events and infrastructure between infrastructure owner operators and the public. The specifications here were initially created under the [Work Zone Data Exchange](https://github.com/usdot-jpo-ode/wzdx) project. 
 
 ## README Outline
 - [Data Feeds](#data-feeds)
-- [Repository Organization](#repostitory-organization)
+- [Repository Organization](#repository-organization)
 - [Project Description](#project-description)
 - [Contact Information](#contact-information)
 - [Release Notes](#release-notes)
@@ -23,7 +23,7 @@ Feed Name | Description | Producer | Consumer | Uses | Content
 `RoadRestrictionFeed` | Provides information about sections of roadways that have restrictions. Restriction types described by this specification are listed in the [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) enumerated type. | Transportation Authorities like Tribal, Local, State, or Federal Agencies. | Traveling public via third parties such as mapping companies and CAVs. | Increased awareness; Route planning; Driver, Passenger, and Road-User Safety; Increased Efficiency; Reduced Damage to Infrastructure. | Restriction road events (see [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)).
 
 
-## Repostitory Organization
+## Repository Organization
 The TDx Specification repository contains several files and subdirectories.
 
 ### Directories
@@ -85,7 +85,7 @@ The TDx Specification defines a JSON schema for each feed within the [schemas](/
 **How do I contribute to the TDx Specification?**
 
 - Report bugs and request features via [GitHub Issues](https://github.com/usdot-jpo-ode/tdx/issues).
-- Ask the TDx community for input on a question or propose an idea you have via [GithHub Discussions](https://github.com/usdot-jpo-ode/tdx/discussions).
+- Ask the TDx community for input on a question or propose an idea you have via [GitHub Discussions](https://github.com/usdot-jpo-ode/tdx/discussions).
 - Create a [GitHub Pull Request](https://help.github.com/articles/creating-a-pull-request/) that implements new functionality or fixes a bug.
 - Review and provide feedback on update issues/discussions/pull requests created by other users.
 - Alternatively, [email us](mailto:avdx@dot.gov.) with any questions.
