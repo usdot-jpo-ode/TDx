@@ -80,6 +80,9 @@
               "items": {
                 "$ref": "#/definitions/Lane"
               }
+            },
+            "vehicle_impact": {
+              "$ref": "#/definitions/VehicleImpact"
             }
           },
           "required": [
@@ -319,11 +322,6 @@
         "center-left-turn-lane"
       ]
     },
-    "UnitOfMeasurement": {
-      "title": "Unit of Measurement Enumerated Type",
-      "description": "Unit of measurement, used when providing a unit to accompany a value",
-      "enum": ["feet", "inches", "centimeters", "pounds", "tons", "kilograms"]
-    },
     "RelatedRoadEventType": {
       "title": "Related Road Event Type Enumerated Type",
       "description": "Describes how a road event is related to the road event that the RelatedRoadEvent object occurs on.",
@@ -339,6 +337,16 @@
         "planned-moving-operation",
         "active-moving-operation"
       ]
+    },
+    "UnitOfMeasurement": {
+      "title": "Unit of Measurement Enumerated Type",
+      "description": "Unit of measurement, used when providing a unit to accompany a value",
+      "enum": ["feet", "inches", "centimeters", "pounds", "tons", "kilograms"]
+    },
+    "VehicleImpact": {
+      "title": "Vehicle Impact Enumerated Type",
+      "description": "The impact to vehicular lanes along a single road in a single direction",
+      "enum": ["all-lanes-closed", "some-lanes-closed", "all-lanes-open", "alternating-one-way", "some-lanes-closed-merge-left", "some-lanes-closed-merge-right", "all-lanes-open-shift-left", "all-lanes-open-shift-right", "some-lanes-closed-split", "flagging", "temporary-traffic-signal", "unknown"]
     }
   }
 }
