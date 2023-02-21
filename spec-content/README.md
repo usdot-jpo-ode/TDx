@@ -31,7 +31,7 @@ The following objects are high-level and describe either a TDx feed or informati
 Object | Description
 --- | ---
 [FeedDataSource](/spec-content/objects/FeedDataSource.md) | Information about a specific data source used to build a work zone data feed.
-[FeedInfo](/spec-content/objects/FeedInfo.md) | Information about a WZDx feed such as metadata, contact information, and data sources.
+[FeedInfo](/spec-content/objects/FeedInfo.md) | Information about a TDx feed such as metadata, contact information, and data sources.
 [RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md) | The root (highest-level) object of a **Road Incident Feed** GeoJSON document.
 [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) | The root (highest-level) object of a **Road Restriction Feed** GeoJSON document.
 
@@ -47,7 +47,7 @@ Object | Description
 [Restriction](/spec-content/objects/Restriction.md) | A restriction on a road event or lane, including type and value.
 [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) | Describes a section of roadway and the limitations of how that section can be used.
 [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md) | The core details of an event occurring on a roadway (i.e. a road event) that is shared by all types of road events. 
-[RoadEventFeature](/spec-content/objects/RoadEventFeature.md) | The GeoJSON `Feature` container object for a WZDx road event.
+[RoadEventFeature](/spec-content/objects/RoadEventFeature.md) | The GeoJSON `Feature` container object for a TDx road event.
 [TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causes disruptions to expected operations.
 
 ### Object Diagrams
@@ -72,7 +72,7 @@ The following enumerated types are used by objects that describe road events:
 Enumerated Type | Description
 --- | ---
 [Direction](/spec-content/enumerated-types/Direction.md) | The direction for a road event based on standard naming for US roads.
-[EventType](/spec-content/enumerated-types/EventType.md) | The type of a WZDx road event.
+[EventType](/spec-content/enumerated-types/EventType.md) | The type of a TDx road event.
 [IncidentCategory](/spec-content/enumerated-types/IncidentCategory.md) | Categories of incidents causing disruptions to expected operations.
 [IncidentType](/spec-content/enumerated-types/IncidentType.md) | Descriptions of the incidents causing disruptions to expected operations.
 [LaneStatus](/spec-content/enumerated-types/LaneStatus.md) | The status of a lane for the traveling public.
