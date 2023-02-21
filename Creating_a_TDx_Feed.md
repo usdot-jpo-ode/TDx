@@ -19,16 +19,17 @@ GeoJSON is the file format of choice because:
 TDx defines the content and structure of several data feeds. Each feed is described by a single root object with many child objects. The output of a TDx data feed is a GeoJSON file containing the feed object. TDx defines the following feed objects:
 
 - `RoadRestrictionFeed` provides information about sections of roadways that have restrictions. Restriction types described by this specification are listed in the [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) enumerated type.
+- `RoadIncidentFeed` provides information about sections of roadways that are impacted by incidents or events such as collisions, special events, disasters, or winds. Incident types described by this specification are listed in the [IncidentType](/spec-content/enumerated-types/IncidentType.md) enumerated type.
 
 *See the [/spec-content/README.md](/spec-content/README.md) for detailed information on all objects defined by TDx.*
 
 ## Business Rules
 The following business rules help assure a standardized and interpretable use of the TDx specification. The specification describes the required structure and data fields to describe a work zone, whereas business rules are additional requirements for using the TDx specification in a standard manner. Note that business rules are distinct from best practices in that the latter are suggestions and business rules are requirements that cannot be validated by the JSON schema.
 
-1. An event must be segmented into separate [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)s when the value of a required property or lane object changes. A complex event should be linked together using the `related_road_events` property on the [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md).
-2. If the `lanes` property on the [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) is provided, it must include one entry for every lane in the road event. Providing lane information for only some of the lanes in a road event is not allowed.
+1. An event must be segmented into separate [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)s, [DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md)s,  or [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md)s when the value of a required property or lane object changes. A complex event should be linked together using the `related_road_events` property on the [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md).
+2. If the `lanes` property on the [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) or [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md) is provided, it must include one entry for every lane in the road event. Providing lane information for only some of the lanes in a road event is not allowed.
 3. A [Lane](/spec-content/objects/Lane.md) `order` value of 1 must represent the left-most lane and an increase in 1 must represent moving a single lane to the right.
-4. The `data_source_id` value must match to the `data_source_id` property of a [FeedDataSource](/spec-content/objects/FeedDataSource.md) included within the same TDx GeoJSON document on the [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)s.
+4. The `data_source_id` value must match to the `data_source_id` property of a [FeedDataSource](/spec-content/objects/FeedDataSource.md) included within the same TDx GeoJSON document on the [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)s, [DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md)s, or [IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md)s.
 5. All dates and times must be expressed in UTC.
 
 ## Implementation Guidance
