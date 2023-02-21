@@ -1,8 +1,9 @@
-### RelatedRoadEventType Enumerated Type
+# RelatedRoadEventType Enumerated Type
 Describes how a road event is related to the road event that the RelatedRoadEvent object occurs on. For example, the first road event in a sequence of events along the roadway, an instance of a recurrent road event, or a nearby road event. 
 
 In many cases, the related road event type only refers to the first road event as the corresponding event may encompass multiple road events.  In these situations, end users will need to use the "first" road event and iterate through all linked road events to find all related road events.
 
+## Values
 Value | Description
 --- | ---
 `first-in-sequence` | The first road event in a sequence of road events that together describe a full work zone or detour
@@ -16,7 +17,7 @@ Value | Description
 `planned-moving-operation` | The first road event of a related planned moving operation work zones (i.e. not part of a sequence of road events)
 `active-moving-operation` | The first road event of a related active moving operation work zones (i.e. not part of a sequence of road events)
 
-#### Used By
+## Used By
 Property | Object
 --- | ---
 `type` | [RelatedRoadEvent](/spec-content/objects/RelatedRoadEvent.md)
