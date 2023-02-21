@@ -204,7 +204,7 @@
           "$ref": "#/definitions/LaneType"
         },
         "lane_number": {
-          "description": "***DEPRECATED*** The number assigned to the lane to help identify its position. Flexible, but usually used for regular, driveable lanes",
+          "description": "***DEPRECATED*** The number assigned to the lane to help identify its position. Flexible, but usually used for regular, drivable lanes",
           "type": "integer",
           "minimum": 1
         },

@@ -13,11 +13,11 @@ Many of the objects and enumerated types used in the TDx Specification were init
 Each TDx object is described by a table of properties with following columns:
 
 - **Name** - The property name.
-- **Type** - The type of data being stored. This can be one of the JSON primative types (only `String`, `Number`, `Array` are used), `Integer`, as defined in the [JSON schema validation specification section 6.1 (Draft 07)](https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-6.1), a formatted string as defined in [JSON schema validation specification section 7 (Draft 07)](https://datatracker.ietf.org/doc/html/draft-handrews-json-schema-validation-01#section-7.3), a [TDx Enumerated Type](#enumerated-types), a TDx Object, or a [GeoJSON Object](https://tools.ietf.org/html/rfc7946#section-3).
+- **Type** - The type of data being stored. This can be one of the JSON primitive types (only `String`, `Number`, `Array` are used), `Integer`, as defined in the [JSON schema validation specification section 6.1 (Draft 07)](https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-6.1), a formatted string as defined in [JSON schema validation specification section 7 (Draft 07)](https://datatracker.ietf.org/doc/html/draft-handrews-json-schema-validation-01#section-7.3), a [TDx Enumerated Type](#enumerated-types), a TDx Object, or a [GeoJSON Object](https://tools.ietf.org/html/rfc7946#section-3).
 - **Description** - A description of the value of the property.
 - **Conformance** - An indication of the requirement for including the property in a TDx GeoJSON document. There are three categories of conformance:
     - *Required* - The property must be included
-    - *Optional* - The property may be ommitted
+    - *Optional* - The property may be omitted
     - *Conditional* - The property's inclusion depends on the inclusion or value of a separate property
 - **Notes** - Additional comments, guidance, notes for future consideration, or examples.
 
@@ -34,7 +34,7 @@ Object | Description
 [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) | The root (highest-level) object of a **Road Restriction Feed** GeoJSON document.
 
 #### Road Events
-The following objects are used to describe events ocurring on roadways (road events) that impact the characteristics of the roadway and involve a change from the default state:
+The following objects are used to describe events occurring on roadways (road events) that impact the characteristics of the roadway and involve a change from the default state:
 
 Object | Description
 --- | ---
