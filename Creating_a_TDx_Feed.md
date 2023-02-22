@@ -61,5 +61,9 @@ DOTs should consider the sources that are being used to build the TDx feeds and 
 ### JSON Schemas
 The TDx Specification defines a JSON schema for each feed within the [schemas](/schemas) directory. The repository contains schemas for the following feeds:
 
-#### Current Version (TDx 1.0)
+#### Current Version (TDx 1.1)
+- [TDx v1.1 RoadIncidentFeed](/schemas/1.1/RoadIncidentFeed.json)
+- [TDx v1.1 RoadRestrictionFeed](/schemas/1.1/RoadRestrictionFeed.json)
+
+#### Previous Versions
 - [TDx v1.0 RoadRestrictionFeed](/schemas/1.0/RoadRestrictionFeed.json)

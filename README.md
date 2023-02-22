@@ -70,9 +70,12 @@ Feedback and comments on the TDx v1.0 Specification are welcome. Comments can be
 ## JSON Schemas
 The TDx Specification defines a JSON schema for each feed within the [schemas](/schemas) directory. Schemas can be used to validate a TDx feed document for compliance to the specification. The repository contains schemas for the following feeds:
 
-### Current Version (TDx 1.0)
-- [TDx v1.0 RoadRestrictionFeed](/schemas/1.0/RoadRestrictionFeed.json)
+### Current Version (TDx 1.1)
+- [TDx v1.1 RoadIncidentFeed](/schemas/1.1/RoadIncidentFeed.json)
+- [TDx v1.1 RoadRestrictionFeed](/schemas/1.1/RoadRestrictionFeed.json)
 
+### Previous Versions
+- [TDx v1.0 RoadRestrictionFeed](/schemas/1.0/RoadRestrictionFeed.json)
 
 ## Contributions
 
