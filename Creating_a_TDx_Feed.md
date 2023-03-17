@@ -33,7 +33,7 @@ The following business rules help assure a standardized and interpretable use of
 
 ## Implementation Guidance
 
-- Feed producers should include a completed road event with a verified start and end date in a public feed for a at least an hour or one feed refresh cycle (whichever is longer) to help inform consumers that the work zone has officially ended.
+- Feed producers should include a completed road event with a verified start and end date in a public feed for at least an hour or one feed refresh cycle (whichever is longer) to help inform consumers that the work zone has officially ended.
 
 ## Data Security Best Practices
 This is a working list of best practices for standing up a TDx data feed assembled by the WZDx Technical Assistance Co-chairs. Please note that this list is not all encompassing; DOTs should consult with security experts for help with securing infrastructure components. **Please note that these are best practices only; not requirements.**
