@@ -2,7 +2,7 @@
 This documents contains information to assist in creating a TDx data feed, such as the feed format, business rules, and validation tools.
 
 ## Feed Format and File Type
-TDx feeds are formatted according to the [GeoJSON](https://geojson.org/) specification. The output of a TDx feed is a GeoJSON document (a `.geojson` file) that contains a single [GeoJSON FeatureCollection](https://datatracker.ietf.org/doc/html/rfc7946#section-3.3) which includes information about the feed (see the [FeedInfo Object](/spec-content/objects/FeedInfo.md)) and a list of [GeoJSON Feature](https://datatracker.ietf.org/doc/html/rfc7946#section-3.2)s describing entities specific to the type of feed, such as work zones.
+TDx feeds are formatted according to the [GeoJSON](https://geojson.org/) specification. The output of a TDx feed is a GeoJSON document (a `.geojson` file) that contains a single [GeoJSON FeatureCollection](https://datatracker.ietf.org/doc/html/rfc7946#section-3.3) which includes information about the feed (see the [FeedInfo Object](/spec-content/objects/FeedInfo.md)) and a list of [GeoJSON Feature](https://datatracker.ietf.org/doc/html/rfc7946#section-3.2)s describing entities specific to the type of feed, such as road restrictions.
 
 ### Why GeoJSON?
 GeoJSON is the file format of choice because:
@@ -10,7 +10,7 @@ GeoJSON is the file format of choice because:
 - It is a lightweight data exchange format.
 - It is easy for humans to read and write.
 - It is easy for machines to parse and generate.
-- The format is designed to exchange spatial data, which is a primary goal of the Work Zone Data Working Group.
+- The format is designed to exchange spatial data.
 - It is an open specification and does not carry licensing burdens.
 - GeoJSON formatted-data is published as text files, so there is a low technological burden of entry.
 - GeoJSON validation, mapping, and visualization tools already exist and will ease adoption by producers and consumers.
@@ -23,7 +23,7 @@ TDx defines the content and structure of several data feeds. Each feed is descri
 *See the [/spec-content/README.md](/spec-content/README.md) for detailed information on all objects defined by TDx.*
 
 ## Business Rules
-The following business rules help assure a standardized and interpretable use of the TDx specification. The specification describes the required structure and data fields to describe a work zone, whereas business rules are additional requirements for using the TDx specification in a standard manner. Note that business rules are distinct from best practices in that the latter are suggestions and business rules are requirements that cannot be validated by the JSON schema.
+The following business rules help assure a standardized and interpretable use of the TDx specification. The specification describes the required structure and data fields to describe a road event, whereas business rules are additional requirements for using the TDx specification in a standard manner. Note that business rules are distinct from best practices in that the latter are suggestions and business rules are requirements that cannot be validated by the JSON schema.
 
 1. An event must be segmented into separate [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md)s when the value of a required property or lane object changes. A complex event should be linked together using the `related_road_events` property on the [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md).
 2. If the `lanes` property on the [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) is provided, it must include one entry for every lane in the road event. Providing lane information for only some of the lanes in a road event is not allowed.
@@ -33,7 +33,7 @@ The following business rules help assure a standardized and interpretable use of
 
 ## Implementation Guidance
 
-- Feed producers should include a completed road event with a verified start and end date in a public feed for at least an hour or one feed refresh cycle (whichever is longer) to help inform consumers that the work zone has officially ended.
+- Feed producers should include a completed road event with a verified start and end date in a public feed for at least an hour or one feed refresh cycle (whichever is longer) to help inform consumers that the road event has officially ended.
 
 ## Data Security Best Practices
 This is a working list of best practices for standing up a TDx data feed assembled by the WZDx Technical Assistance Co-chairs. Please note that this list is not all encompassing; DOTs should consult with security experts for help with securing infrastructure components. **Please note that these are best practices only; not requirements.**

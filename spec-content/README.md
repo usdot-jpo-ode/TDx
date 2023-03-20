@@ -29,7 +29,7 @@ The following objects are high-level and describe either a TDx feed or informati
 
 Object | Description
 --- | ---
-[FeedDataSource](/spec-content/objects/FeedDataSource.md) | Information about a specific data source used to build a work zone data feed.
+[FeedDataSource](/spec-content/objects/FeedDataSource.md) | Information about a specific data source used to build a TDx data feed.
 [FeedInfo](/spec-content/objects/FeedInfo.md) | Information about a TDx feed such as metadata, contact information, and data sources.
 [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) | The root (highest-level) object of a **Road Restriction Feed** GeoJSON document.
 
