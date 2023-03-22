@@ -10,7 +10,7 @@
       {
         "data_source_id": "1",
         "organization_name": "New York City DOT",
-        "contact_name": "Solomn Soliel Sourcefeed",
+        "contact_name": "Solomon Soliel Sourcefeed",
         "contact_email": "solomon.sourcefeed@testcity1.gov",
         "update_frequency": 60,
         "update_date": "2021-07-01T00:00:00Z"
