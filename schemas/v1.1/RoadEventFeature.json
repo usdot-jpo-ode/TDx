@@ -163,11 +163,11 @@
               "minimum": 0
             },
             "is_start_position_verified": {
-              "description": "Indicates if the start position (first geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the start of the work zone",
+              "description": "Indicates if the start position (first geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the start of the road event",
               "type": "boolean"
             },
             "is_end_position_verified": {
-              "description": "Indicates if the end position (last geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the end of the work zone",
+              "description": "Indicates if the end position (last geometric coordinate pair) is based on actual reported data from a GPS-equipped device that measured the location of the end of the road event",
               "type": "boolean"
             },
             "start_date": {
@@ -296,7 +296,7 @@
           "$ref": "#/definitions/EventType"
         },
         "related_road_events": {
-          "description": "A list describing one or more road events which are related to this road event, such as a work zone project it is part of or another road event that occurs before or after it in sequence.",
+          "description": "A list describing one or more road events which are related to this road event, such as a project it is part of or another road event that occurs before or after it in sequence.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/RelatedRoadEvent"
@@ -364,7 +364,7 @@
           }
         },
         "parents": {
-          "description": "Indicates entities that the road event with this relationship is a part of, such as a work zone project or phase. Values can but do not have to correspond to a TDx entity",
+          "description": "Indicates entities that the road event with this relationship is a part of, such as a project or phase. Values can but do not have to correspond to a TDx entity",
           "type": "array",
           "minItems": 1,
           "items": {
@@ -405,7 +405,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "description": "The type of road event being identifed, such as another sequence of related work zones, a detour, or next road event in sequence.",
+          "description": "The type of road event being identifed, such as another sequence of related incident, a detour, or next road event in sequence.",
           "$ref": "#/definitions/RelatedRoadEventType"
         },
         "id": {

@@ -6,16 +6,16 @@ In many cases, the related road event type only refers to the first road event a
 ## Values
 Value | Description
 --- | ---
-`first-in-sequence` | The first road event in a sequence of road events that together describe a full work zone or detour
-`next-in-sequence` | The next (subsequent) road event in a sequence of road events that together describe a full work zone or detour
-`first-occurrence` | The first road event in the first occurrence in time of a recurrent work zone
-`next-occurrence` | The first road event in the next occurrence in time of a recurrent work zone
+`first-in-sequence` | The first road event in a sequence of road events that together describe a full incident, restriction, or detour
+`next-in-sequence` | The next (subsequent) road event in a sequence of road events that together describe a full incident, restriction, or detour
+`first-occurrence` | The first road event in the first occurrence in time of a recurrent road event
+`next-occurrence` | The first road event in the next occurrence in time of a recurrent road event
 `related-work-zone` | The first road event of related work zones (i.e. not part of a sequence of road events or recurrent work zone)
 `related-detour` | The first road event of related detours (i.e. not part of a sequence of road events)
 `related-restriction` | The first road event of related restrictions (i.e. not part of a sequence of road events)
 `related-incident` | The first road event of related incident (i.e. not part of a sequence of road events)
-`planned-moving-operation` | The first road event of a related planned moving operation work zones (i.e. not part of a sequence of road events)
-`active-moving-operation` | The first road event of a related active moving operation work zones (i.e. not part of a sequence of road events)
+`planned-moving-operation` | The first road event of a related planned moving operation (i.e. not part of a sequence of road events)
+`active-moving-operation` | The first road event of a related active moving operation (i.e. not part of a sequence of road events)
 
 ## Used By
 Property | Object
