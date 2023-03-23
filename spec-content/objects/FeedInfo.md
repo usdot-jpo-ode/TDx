@@ -18,4 +18,5 @@ Name | Type | Description | Conformance | Notes
 ## Used By
 Property | Object
 --- | --- 
+`feed_info` | [RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md)
 `feed_info` | [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md)

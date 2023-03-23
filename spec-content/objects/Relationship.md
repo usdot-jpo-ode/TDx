@@ -3,6 +3,8 @@ The `Relationship` object is used to identify both sequential and hierarchical r
 
 This object was initially developed for the [WZDx Specification](https://github.com/usdot-jpo-ode/wzdx).
 
+*All properties that use the Relationship object are deprecated as of TDx v1.1 and along with those properties it will be removed from the specification in the next major release.*
+
 ## Properties
 Name | Type | Description | Conformance | Notes
 --- | --- | --- | --- | ---

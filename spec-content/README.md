@@ -2,6 +2,7 @@
 The TDx specification defines the content and structure of GeoJSON documents intended to be distributed as a data feed. Each GeoJSON document (colloquially "feed") contains a single feed root object. The specification defines the following feed objects:
 
 - [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md): describes the location and details of restrictions on roadways.
+- [RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md): describes the location and details of incidents and events impacting roadways.
 
 Each feed object contains many layers of child objects. Together all the objects define the TDx feed. All TDx objects are located in the [objects](/spec-content/objects) subdirectory and listed in the [Objects](#objects) section of this document.
 
@@ -31,6 +32,7 @@ Object | Description
 --- | ---
 [FeedDataSource](/spec-content/objects/FeedDataSource.md) | Information about a specific data source used to build a TDx data feed.
 [FeedInfo](/spec-content/objects/FeedInfo.md) | Information about a TDx feed such as metadata, contact information, and data sources.
+[RoadIncidentFeed](/spec-content/objects/RoadIncidentFeed.md) | The root (highest-level) object of a **Road Incident Feed** GeoJSON document.
 [RoadRestrictionFeed](/spec-content/objects/RoadRestrictionFeed.md) | The root (highest-level) object of a **Road Restriction Feed** GeoJSON document.
 
 #### Road Events
@@ -38,12 +40,16 @@ The following objects are used to describe events occurring on roadways (road ev
 
 Object | Description
 --- | ---
+[DetourRoadEvent](/spec-content/objects/DetourRoadEvent.md) | A detour on a roadway.
+[IncidentRoadEvent](/spec-content/objects/IncidentRoadEvent.md) | Describes incidents or events that close or restrict the use of a road segment.
 [Lane](/spec-content/objects/Lane.md) | An individual lane within a road event.
-[Relationship](/spec-content/objects/Relationship.md) | Identification of both sequential and hierarchical relationships between road events and other entities.
+[RelatedRoadEvent](/spec-content/objects/RelatedRoadEvent.md) | Identification a road event that is related to the road event that the RelatedRoadEvent object occurs on.
 [Restriction](/spec-content/objects/Restriction.md) | A restriction on a road event or lane, including type and value.
 [RestrictionRoadEvent](/spec-content/objects/RestrictionRoadEvent.md) | Describes a section of roadway and the limitations of how that section can be used.
 [RoadEventCoreDetails](/spec-content/objects/RoadEventCoreDetails.md) | The core details of an event occurring on a roadway (i.e. a road event) that is shared by all types of road events. 
 [RoadEventFeature](/spec-content/objects/RoadEventFeature.md) | The GeoJSON `Feature` container object for a TDx road event.
+[TypeOfIncident](/spec-content/objects/TypeOfIncident.md) | Describes an event that causes disruptions to expected operations.
+[Relationship](/spec-content/objects/Relationship.md) (DEPRECATED)| *All properties that use this object are deprecated so this object will be removed in a future release, use [RelatedRoadEvent](/spec-content/objects/RelatedRoadEvent.md) instead.* Identification of both sequential and hierarchical relationships between road events and other entities.
 
 ### Object Diagrams
 The object diagrams below depict the relationship between the data objects for each TDx feed.
@@ -53,7 +59,7 @@ The object diagram below indicates the relationship between the data objects use
 ![TDx RoadRestrictionFeed object diagram](/images/TDx_RoadRestrictionFeed_object_diagram.png)
 
 #### Updating the object diagram
-When making changes to the specification, the object diagram needs to be updated as well. To modify the object diagram, open `/images/TDx_RoadRestrictionFeed_object_diagram.drawio` at https://app.diagrams.net (or any drawio editor). Make necessary changes to the diagram using the web editor, then download the `drawio` file and replace the appropriate file in the `/images` directory with the new file. Additionally **export** the diagram as a PNG, using the diagram name as the file name, and replace `/images/TDx_RoadRestrictionFeed_object_diagram.png` with the new image file.
+When making changes to the specification, the object diagram needs to be updated as well. To modify the object diagram, open [/images/TDx_RoadRestrictionFeed_object_diagram.drawio](/images/TDx_RoadRestrictionFeed_object_diagram.drawio) or [/images/TDx_RoadIncidentFeed_object_diagram.drawio](/images/TDx_RoadIncidentFeed_object_diagram.drawio) at https://app.diagrams.net (or any drawio editor). Make necessary changes to the diagram using the web editor, then download the `drawio` file and replace the appropriate file in the `/images` directory with the new file. Additionally **export** the diagram as a PNG, using the diagram name as the file name, and replace `/images/TDx_RoadRestrictionFeed_object_diagram.png` with the new image file.
 
 ## Enumerated Types
 Many object properties are restricted to a finite set of values defined by an enumerated type. The enumerations for each enumerated type as well as what object properties it is used by is described in its own file in the [enumerated-types](/spec-content/enumerated-types) directory.
@@ -68,7 +74,10 @@ Enumerated Type | Description
 --- | ---
 [Direction](/spec-content/enumerated-types/Direction.md) | The direction for a road event based on standard naming for US roads.
 [EventType](/spec-content/enumerated-types/EventType.md) | The type of a TDx road event.
+[IncidentCategory](/spec-content/enumerated-types/IncidentCategory.md) | Categories of incidents causing disruptions to expected operations.
+[IncidentType](/spec-content/enumerated-types/IncidentType.md) | Descriptions of the incidents causing disruptions to expected operations.
 [LaneStatus](/spec-content/enumerated-types/LaneStatus.md) | The status of a lane for the traveling public.
 [LaneType](/spec-content/enumerated-types/LaneType.md) | An indication of the type of lane or shoulder.
+[RelatedRoadEventType](/spec-content/enumerated-types/RelatedRoadEventType.md) | The type of relationship with a road event that is being identified.
 [RestrictionType](/spec-content/enumerated-types/RestrictionType.md) | The type of vehicle restriction on a roadway or lane.
 [UnitOfMeasurement](/spec-content/enumerated-types/UnitOfMeasurement.md) | Unit of measurement (e.g. "pounds", "centimeters").
