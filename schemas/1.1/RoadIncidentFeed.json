@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/usdot-jpo-ode/TDx/main/schemas/1.1/RoadInicdnetFeed.json",
+  "$id": "https://raw.githubusercontent.com/usdot-jpo-ode/TDx/main/schemas/1.1/RoadIncidentFeed.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "TDx v1.1 Road Incident Feed",
   "description": "The GeoJSON output of a TDx road incident data feed (TDx v1.1)",

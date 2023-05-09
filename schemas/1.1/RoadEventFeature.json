@@ -25,6 +25,12 @@
       "oneOf": [
         {
           "$ref": "#/definitions/RestrictionRoadEvent"
+        },
+        {
+          "$ref": "#/definitions/IncidentRoadEvent"
+        },
+        {
+          "$ref": "#/definitions/DetourRoadEvent"
         }
       ]
     },
