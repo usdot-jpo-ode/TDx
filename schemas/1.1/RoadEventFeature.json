@@ -475,7 +475,7 @@
     "EventType": {
       "title": "Road Event Type Enumerated Type",
       "description": "The type of TDx road event",
-      "enum": ["restriction"]
+      "enum": ["restriction", "incident", "detour"]
     },
     "Direction": {
       "title": "Direction Enumerated Type",
