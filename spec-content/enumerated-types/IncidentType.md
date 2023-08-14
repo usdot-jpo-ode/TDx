@@ -24,6 +24,7 @@ Disaster | `fire-building` | A building fire interrupts normal operations.
 Disaster | `fire-brush` | A brush fire interrupts normal operations.
 Disaster | `fire-forest` | A forest fire interrupts normal operations.
 Disaster | `fire-grass` | A grass fire interrupts normal operations.
+Disaster | `fire-prescribed` | A prescribed fire interrupts normal operations.
 Disaster | `fire-wild` | A wild fire interrupts normal operations.
 Disaster | `fire-hazardous-materials` | A major hazardous materials fire interrupts normal operations.
 Disaster | `flood-flash` | A flash flood interrupts normal operations.
@@ -33,6 +34,7 @@ Disaster | `flood-levee-failure` | A levee failure interrupts normal operations.
 Disaster | `flow-avalanche-mud-material` | A material flow (avalanche, landslide, or mudslide) interrupts normal operations.
 Disaster | `radiation-release-leak` | A radioactive release interrupts normal operations.
 Disaster | `radiation-hazard` | A radiation hazard interrupts normal operations.
+Disaster | `rockfall` | Rockfall interrupts normal operations.
 Disaster | `seismic-earthquake-damage` | Earthquake damage interrupts normal operations.
 Disaster | `seismic-tsunami-tidal-wave` | A tsunami interrupts normal operations.
 Disaster | `toxin-release-leak` | A toxic release interrupts normal operations.
@@ -60,6 +62,9 @@ Special Event | `procession` | A procession interrupts normal operations.
 Special Event | `crowd` | A crowd interrupts normal operations.
 Special Event | `road-race` | A road race interrupts normal operations.
 Special Event | `running-race` | A running race interrupts normal operations.
+Winter | `snowfall` | Snowfall interrupts normal operations.
+Winter |	`ice` | Icy conditions interrupt normal operations.
+
 
 ## Used By
 Property | Object
