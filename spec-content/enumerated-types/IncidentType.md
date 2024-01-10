@@ -22,6 +22,7 @@ Disaster | `explosion` | An explosion interrupts normal operations.
 Disaster | `fire` | A serious fire interrupts normal operations.
 Disaster | `fire-building` | A building fire interrupts normal operations.
 Disaster | `fire-brush` | A brush fire interrupts normal operations.
+Disaster | `fire-danger` | High fire danger interrupts normal operations.
 Disaster | `fire-forest` | A forest fire interrupts normal operations.
 Disaster | `fire-grass` | A grass fire interrupts normal operations.
 Disaster | `fire-prescribed` | A prescribed fire interrupts normal operations.
@@ -35,10 +36,12 @@ Disaster | `flow-avalanche-mud-material` | A material flow (avalanche, landslide
 Disaster | `radiation-release-leak` | A radioactive release interrupts normal operations.
 Disaster | `radiation-hazard` | A radiation hazard interrupts normal operations.
 Disaster | `rockfall` | Rockfall interrupts normal operations.
+Disaster | `seismic-activity` | Seismic activity interrupts normal operations.
 Disaster | `seismic-earthquake-damage` | Earthquake damage interrupts normal operations.
 Disaster | `seismic-tsunami-tidal-wave` | A tsunami interrupts normal operations.
 Disaster | `toxin-release-leak` | A toxic release interrupts normal operations.
 Disaster | `volcanic-ash-fall` | Ash fall interrupts normal operations.
+Disaster | `volcanic-gas` | Volcanic gas release interrupts normal operations.
 Disaster | `volcanic-lava-flow` | A lava flow interrupts normal operations.
 Disaster | `volcanic-eruption` | A volcanic eruption interrupts normal operations.
 Special Event | `major` | A major event interrupts normal operations.
